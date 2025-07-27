@@ -153,7 +153,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Changed from space-between */
-    width: 100% auto;
     height: 70px;
     margin: 0 auto;
     gap: 16px; /* Small gap between p and icons */
