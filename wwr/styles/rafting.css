@@ -8,8 +8,29 @@
 }
 
 header {
+    display: grid;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 1rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+header img {
+    margin-left: 140px;
+    width: 80px;
+    margin-right: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
 * {
@@ -63,12 +84,97 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
     color: #fff;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100px;
+    margin-left: 70px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+article {
+    display: flex;
+    background-color: var(--accent1-color);
+    color: #fff;
+    position: relative;
+    top: -300px;
+    opacity: 0.9;
+    flex-flow: row-reverse;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    justify-content: center;
+}
+
+.hero1 {
+    margin-top: -90px;
+}
+
+.adventure1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.adventure1 img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.adventure1 figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    margin: 8px;
+    font-weight: 500;
+}
+
+.adventure {
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Changed from space-between */
+    width: 100% auto;
+    height: 70px;
+    margin: 0 auto;
+    gap: 16px; /* Small gap between p and icons */
+}
+
+footer p {
+    margin-left: 0; /* Remove extra left margin */
+    font-size: 1rem;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+}
+
+footer .socialmedia a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
 }
