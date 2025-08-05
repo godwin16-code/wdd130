@@ -373,11 +373,6 @@ fieldset {
 
 }
 
-fieldset input,
-fieldset label {
-    display: none;
-}
-
 .radio-group {
     display: block;      /* Stack each label on a new line */
     margin-bottom: 18px;
