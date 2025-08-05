@@ -303,11 +303,18 @@ footer .socialmedia a img {
     position: relative;
 }
 
+.message1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form label {
     display: block;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     font-weight: 500;
     text-align: left;
+    width: 300px; /* Align label with input width */
 }
 
 .form input,
@@ -317,7 +324,7 @@ footer .socialmedia a img {
     margin-bottom: 18px;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid#ccc;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     background: #fff;
 }
@@ -355,4 +362,45 @@ button:focus {
 .frame {
     color: white;
     text-decoration: none;
+}
+
+fieldset {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 2px;
+    border: none;
+
+}
+
+fieldset input,
+fieldset label {
+    display: none;
+}
+
+.radio-group {
+    display: block;      /* Stack each label on a new line */
+    margin-bottom: 18px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    margin-bottom: 8px;  /* Space between each radio option */
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 12px 0 18px 0;
+    flex-direction: row-reverse;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
 }
